@@ -1,0 +1,21 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="create-blog content">
+    <form class="form-group col-4 m-auto p-4 d-flex flex-column gap-2 border">
+      <label for="title">Blog title:</label>
+      <input  class="form-control" type="text" id="title" name="title" required>
+      <label for="snippet">Blog snippet:</label>
+      <input class="form-control"  type="text" id="snippet" name="snippet" required>
+      <label for="body">Blog body:</label>
+      <textarea class="form-control"  id="body" name="body" required></textarea>
+      <button class="btn btn-info">Submit</button>
+    </form>
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>
